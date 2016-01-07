@@ -7,5 +7,12 @@ function getIdIntr(){
 	//结下来获取子节点，括号中是表达式，根据ID的位置自行修改。
 	//最后获取文本节点。 （除了这种方法还有获取兄弟节点的方式）
 	var id = $(this).parent().parent().children(":first").text();
-	
+	return id;
+}
+
+//表单字段内容太多，快速清空表单内容
+function resetForm(){
+    //$()[0] -->将jquery对象转换为js对象
+    //使用js的reset方法便可以重置表单内容
+    $("form")[0].reset();
 }
